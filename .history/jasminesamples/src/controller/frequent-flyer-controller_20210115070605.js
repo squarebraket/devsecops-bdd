@@ -10,13 +10,13 @@ module.exports = (function () {
       frequentFlyerModel.statusPoints = frequentFlyerModel.statusPoints + additionalPoints;
       const points = frequentFlyerModel.statusPoints;
 
-      if (points >= 0 && points < 300) {
+      if (points >= 0 && points <= 300) {
         frequentFlyerModel.status = 'Bronze';
-      } else if (points >= 300 && points < 500) {
+      } else if (points >= 301 && points <= 500) {
         frequentFlyerModel.status = 'Silver';
-      } else if (points >= 500 && points < 700) {
+      } else if (points >= 501 && points <= 700) {
         frequentFlyerModel.status = 'Gold';
-      } else if (points >= 700) {
+      } else if (points >= 701) {
         frequentFlyerModel.status = 'Platinum';
       }
     };

@@ -8,16 +8,11 @@ module.exports = (function () {
 
     this.earnStatusPoints = function (additionalPoints) {
       frequentFlyerModel.statusPoints = frequentFlyerModel.statusPoints + additionalPoints;
-      const points = frequentFlyerModel.statusPoints;
 
-      if (points >= 0 && points < 300) {
-        frequentFlyerModel.status = 'Bronze';
-      } else if (points >= 300 && points < 500) {
+      if (frequentFlyerModel.statusPoints >= 300) {
         frequentFlyerModel.status = 'Silver';
-      } else if (points >= 500 && points < 700) {
+      } else if (frequentFlyerModel.statusPoints >= 500) {
         frequentFlyerModel.status = 'Gold';
-      } else if (points >= 700) {
-        frequentFlyerModel.status = 'Platinum';
       }
     };
 

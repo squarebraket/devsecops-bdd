@@ -53,21 +53,6 @@ describe('Frequent Flyers', function () {
 
       frequentFlyer.earnStatusPoints(149);
       expect(frequentFlyer.getStatus()).toBe('Bronze');
-
-      frequentFlyer.earnStatusPoints(1);
-      expect(frequentFlyer.getStatus()).toBe('Silver');
-
-      frequentFlyer.earnStatusPoints(199);
-      expect(frequentFlyer.getStatus()).toBe('Silver');
-
-      frequentFlyer.earnStatusPoints(1);
-      expect(frequentFlyer.getStatus()).toBe('Gold');
-
-      frequentFlyer.earnStatusPoints(199);
-      expect(frequentFlyer.getStatus()).toBe('Gold');
-
-      frequentFlyer.earnStatusPoints(1);
-      expect(frequentFlyer.getStatus()).toBe('Platinum');
     });
 
     it('should upgrade member to next status level when enough points are earned', function () {
