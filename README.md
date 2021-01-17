@@ -6,7 +6,7 @@ Using BDD developers can create solid, tested business logic and also, test that
 
 ## Intro
 
-This repo contains a set of Javascript files that show how to use unit and BDD tests in conjunction, to test application code. All the code is in the folder called `jasminesamples`.
+This repo contains a set of Javascript files that show how to use unit and BDD tests in tandem to test application code.
 
 All unit-test were written using `Jasmine`(https://jasmine.github.io). BDD test were written using `cucumber-js`(https://cucumber.io).
 
